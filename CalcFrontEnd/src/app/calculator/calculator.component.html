@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="calculator.component.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <output class="display">{{ value }}</output>
+      <div class="buttons">
+        <button class="button" (click)="addOperator('%')">%</button>
+        <div class="Vspace"></div>
+        <button class="button" (click)="reset()">CE</button>
+        <div class="Vspace"></div>
+        <button class="button" (click)="reset()">C</button>
+        <div class="Vspace"></div>
+        <button class="button" (click)="delete()">⌫</button>
+        <div class="Hspace"></div>
+        <button class="button" (click)="addOperator('1/x')">1/x</button>
+        <div class="Vspace"></div>
+        <button class="button" (click)="addOperator('^')">x^2</button>
+        <div class="Vspace"></div>
+        <button class="button" (click)="addOperator('√x')">√x</button>
+        <div class="Vspace"></div>
+        <button class="button" (click)="addOperator('/')">÷</button>
+        <div class="Hspace"></div>
+        <button class="numButton" (click)="addNumber('7')">7</button>
+        <div class="Vspace"></div>
+        <button class="numButton" (click)="addNumber('8')">8</button>
+        <div class="Vspace"></div>
+        <button class="numButton" (click)="addNumber('9')">9</button>
+        <div class="Vspace"></div>
+        <button class="button" (click)="addOperator('*')">*</button>
+        <div class="Hspace"></div>
+        <button class="numButton" (click)="addNumber('4')">4</button>
+        <div class="Vspace"></div>
+        <button class="numButton" (click)="addNumber('5')">5</button>
+        <div class="Vspace"></div>
+        <button class="numButton" (click)="addNumber('6')">6</button>
+        <div class="Vspace"></div>
+        <button class="button" (click)="addOperator('-')">-</button>
+        <div class="Hspace"></div>
+        <button class="numButton" (click)="addNumber('1')">1</button>
+        <div class="Vspace"></div>
+        <button class="numButton" (click)="addNumber('2')">2</button>
+        <div class="Vspace"></div>
+        <button class="numButton" (click)="addNumber('3')">3</button>
+        <div class="Vspace"></div>
+        <button class="button" (click)="addOperator('+')">+</button>
+        <div class="Hspace"></div>
+        <button class="numButton" (click)="addNumber('0')">0</button>
+        <div class="Vspace"></div>
+        <button class="numButton" (click)="add('.')">.</button>
+        <div class="Vspace"></div>
+        <button class="numButton" (click)="sign()">+/-</button>
+        <div class="Vspace"></div>
+        <button class="button" (click)="evaluateExp()">=</button>
+      </div>
+    </div>
+  </body>
+</html>
